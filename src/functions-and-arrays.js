@@ -136,7 +136,19 @@ const wordsFind = [
   "disobedience",
 ];
 
-function doesWordExist() {}
+function doesWordExist(arr, word) {
+  let wordExists = false;
+  arr.forEach(function (el) {
+    if (el === word) {
+      wordExists = true;
+    }
+  });
+  if (arr.length === 0) {
+    return null;
+  } else {
+    return wordExists;
+  }
+}
 
 // Iteration #7: Count repetition
 const wordsCount = [
