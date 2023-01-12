@@ -50,7 +50,17 @@ function sum() {}
 // Level 1: Array of numbers
 const numbersAvg = [2, 6, 9, 10, 7, 4, 1, 9];
 
-function averageNumbers() {}
+function averageNumbers(arr) {
+  let sum = 0;
+  arr.forEach(function (el) {
+    sum += el;
+  });
+  if (arr.length === 0) {
+    return null;
+  } else {
+    return sum / arr.length;
+  }
+}
 
 // Level 2: Array of strings
 const wordsArr = [
